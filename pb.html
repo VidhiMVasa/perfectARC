@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="pb.css">
+  <!-- <link rel="stylesheet" href="AddToCart.css"> -->
+  
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+ 
+<div class="main">
+<!----Navigation Bar--> 
+<div class="navigationBar">
+  <header>
+    <nav>
+      <div><img src="logo.png" alt="logo" id="logo"></div>
+      <label for="menudrop" class="bartoggle">&#8801;</label>
+      <input type="checkbox" id="menudrop">
+      <ul class="NavMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="javascript:void(0)"><label for="droplist1" class="toggle">Shop By</label></a>
+          <input type="checkbox" id="droplist1">
+          <ul>
+            <li>
+              <a href="javascript:void(0)"><label for="droplist2" class="toggle">brands</label></a>
+              <input type="checkbox" id="droplist2">
+              <ul>
+                <li><a href="#">Allmax</a></li>
+                <li><a href="#">Chiba</a></li>
+                <li><a href="#">David Kirsch</a></li>
+                <li><a href="#">Muscle Nutrition</a></li>
+              </ul>
+            </li>
+            <li><a href="">categories</a></li>
+            <li><a href="">goals</a></li>
+          </ul>
+        </li>
+        <li><a href="#contactus">Contact Us</a></li>
+      </ul>
+  
+      <i class='bx bx-cart' id="cart-icon">       
+        <span class="badge">0</span>  
+      </i> 
+      <div class="cart1">
+          <center><h2 class="cart-title">Your Cart</h2></center>
+          <div class="cart-content">
+              <!-- <div class="cart-box"> -->
+                  <!-- <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Chocolate.jpg" alt="" class="cart-img">
+                  <div class="detail-box">
+                      <div class="cart-product-title"></div>
+                      <div class="cart-price">Rs.50</div>
+                      <input type="number" value="1" class="cart-quantity">
+                  </div> 
+                  <i class='bx bx-trash cart-remove'></i>-->
+              <!-- </div> -->
+          </div>
+          <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">Rs.0</div>
+          </div>
+          <button type="button" class="btn-buy">Buy Now</button>
+          <i class='bx bx-window-close' id="close-cart"></i>
+      </div>
+    </nav>
+  </header>
+    
+      <i class='bx bx-cart' id="cart-icon">       
+        <span class="badge">0</span>  
+      </i> 
+      <div class="cart1">
+          <center><h2 class="cart-title">Your Cart</h2></center>
+          <div class="cart-content">
+  
+          </div>
+          <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">Rs.0</div>
+          </div>
+          <button type="button" class="btn-buy">Buy Now</button>
+          <i class='bx bx-window-close' id="close-cart"></i>
+  
+      </div>
+</div>
+</div>
+
+
+<div>
+  <input type="search" style="width:70%; height: 50px; background-color: white; box-shadow: 3px 4px 10px gray; margin-top: 10%;">
+</div>
+
+<!---Cart start-->
+
+<!-- </button> -->
+
+<!---End Cart-->
+
+<!-----Home Carousel-->
+<div class="homeContent" id="home">
+  <div id="carouselExampleIndicators" class="carousel slide justify-content-center" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active justify-content-center align-content-center bg-dark  " aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=" justify-content-center align-content-center bg-dark "></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=" justify-content-center align-content-center bg-dark "></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class=" justify-content-center align-content-center bg-dark "></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active justify-content-center align-content-center" data-bs-interval="3000" >
+          <img src="image/allmax.jpg" class="d-block w-100 imghome" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center align-content-center" data-bs-interval="3000">
+          <img src="image/ball.jpg" class="d-block w-100 imghome" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center align-content-center" data-bs-interval="3000">
+          <img src="image/chibagloves.jpg" class="d-block w-100 imghome" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center align-content-center align-item-center" data-bs-interval="3000">
+          <img src="image/lotionShrink.jpg" class="d-block w-100 imghome" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev justify-content-center align-content-center" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  <!-- <div class="homeInfo">
+   <div><p class="quote m-2"><b><q>Good Health starts with fit body</q></b></p>
+      <p class="pbc pt-2"> <b>  <i class='bx bxs-hand-right'></i>  Do you want</b></p>
+      <div class="ms-4"><b><i class='bx bx-dumbbell'></i>  To Shape your body Perfect fit?</b></div>
+      <div class="ms-4"><b><i class='bx bx-street-view'></i>  Lose Weight?</b></div>
+      <div class="ms-4"><b><i class='bx bx-heart'></i>  Energised or maintain body wellness?</b></div>
+      <p><div class="pbc"><b>	Then, <span id="pb"><q>perfect body</q></span>provide you the best 	nutrition and tools from the top national 	and international brands.</b></div>
+      <div class="pbc"><b><span id="pb"><q>Perfect body</q></span> is the combination of healthy nutrition , muscle lotions and 	workout helpful equipment.</b></div></p>
+    </div>
+  </div> -->
+</div>
+
+<!----Categories--> 
+<div class="container-fluid pb-5" id="shop">
+
+    <div class="ShopBy" id="brands"><b>Shop By Brands</b>
+    <!-- <select name="Brands" id="Selectbrand" onchange="location=this.value;">
+      <option value="">--- Select Brands ---</option>
+      <option value="#allmax">Allmax</option>
+      <option value="#chiba">Chiba</option>
+      <option value="#David Kirch Wellness Co.">David Kirch Wellness</option>
+      <option value="#Muscle Nutrition">Muscle Nutrition</option>
+    </select> -->
+  </div><br><hr>
+  <div class="row justify-content-center mt-5">
+    <a class="btn col-2 border border-light ms-3 me-3 pt-5" href="#allmax" role="button"><img src="image/allmaxIcon.jpg" alt="" class="SelectBrand align-items-center"></a>
+    <a class="btn col-2 border border-light ms-3 me-3 pt-5" href="#chiba" role="button"><img src="image/chibaIcon.jpg" alt=""  class="SelectBrand" ></a>
+    <a class="btn col-2 border border-light ms-3 me-3 pt-3" href="#David Kirch Wellness Co." role="button"><img src="image/david kirsch Logo.png" alt=""  class="SelectBrand"></a>
+    <a class="btn col-2 border border-light ms-3 me-3" href="#Muscle Nutrition" role="button"><img src="image/muscleNutrition.jpg" alt=""  class="SelectBrand"></a>
+  </div><br><hr>
+    <p></p>
+    <p class="brandName" id="allmax"> <img src="image/allmaxIcon.jpg" alt="" class="allmaxIcon" ><!--<b>AllMax</b>--></p>
+<div class="wrapper">
+  <div class="shop-content">
+    <div class="productBox">
+        <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Chocolate.jpg" alt="" class="productImg">
+        <p class="productTitle">Allmax Allwhey Gold 5 Lb Chocolate</p> 
+        <span class="price">Rs.25</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>25</b></span></span><br>
+        <!-- <input type="number" value="12" class="stock"> -->
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail"><img src="image\Allmax\Allmax Allwhey Gold 5 Lb Chocolate.jpg" alt="" class="detailImg">
+          <p>The Ideal Post-Workout Recovery Shake:<p> Research shows that consuming high levels of premium protein post-workout help muscles recover faster. With the body primed for nutrient absorption, a rapidly digestible protein source helps turn the body from a catabolic (muscle-wasting) state to an anabolic (muscle-building) state. Whey is recognized as the best post-workout protein source because with its high biological value, it gets absorbed and utilized faster than any other source.</p>
+        </p>
+        <ul class="detailList">
+          <li>100% Whey Protein source</li>
+          <li>Primary source: Whey Protein Isolate</li>
+          <li>24 grams of protein per serving</li>
+          <li>Zero non-protein amino acids</li>
+          <li>Lab Tested & Certified</li></ul>
+      </div>
+      </div>
+        
+    </div>
+        <!-- <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart('Allmax Allwhey Gold 5 Lb Chocolate')">Add To Cart</button> -->
+
+    <div class="productBox">
+        <img src="image\Allmax\ALLMAX ALLWHEY GOLD 5 LB COOKIES & CREAM.jpg" alt="" class="productImg">
+        <p class="productTitle"> Allmax Allwhey Gold 5 Lb Cookies & Cream</p>
+        <span class="price">Rs.35</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>200</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail"><img src="image\Allmax\ALLMAX ALLWHEY GOLD 5 LB COOKIES & CREAM.jpg" alt="" class="detailImg">
+          <p>Allwhey gold is an ultra-premium whey protein isolate and whey protein concentrate blend with 24 g protein in a 30 g serving; that's an 80 percent yield! Allwhey gold delivers a clean, complete and whole protein that has been sourced from 100 percent whey protein with zero aminos added. Demand low carbs, low fat and low sugar. Allwhey gold features reduced lactose (milk sugar) protein; ideal for individuals sensitive to lactose in other protein drinks. Allwhey has non-denatured intact whey protein fractions that further support protein absorption and utilization. Allwhey is formulated with enzymes that enhance digestion and result in higher levels of absorption and ultimately help you better utilize the protein you consume. Allwhey gold delivers an ultra-high quality whey isolate-concentrate protein blend to help rebuild your muscles after intense training. Research shows that higher protein levels following your workout help muscles recover faster. Better protein, better results.</p>
+          <ul class="detailList">
+            <li>100% Whey Protein source</li>
+            <li>Primary source: Whey Protein Isolate</li>
+            <li>Lab Tested & Certified</li></ul>
+        </div></div>
+    </div>
+
+    <div class="productBox">
+        <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Vanilla.jpg" alt="" class="productImg">
+        <p class="productTitle"> Allmax Allwhey Gold 5 Lb Vanilla</p>
+        <span class="price">Rs.100</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>12</b></span></span><br>
+        <!-- <input type="number" value="1" class="cart-quantity"> -->
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Vanilla.jpg" alt="" class="detailImg">
+            <p>The Ideal Post-Workout Recovery Shake: Research shows that consuming high levels of premium protein post-workout help muscles recover faster. With the body primed for nutrient absorption, a rapidly digestible protein source helps turn the body from a catabolic (muscle-wasting) state to an anabolic (muscle-building) state. Whey is recognized as the best post-workout protein source because with its high biological value, it gets absorbed and utilized faster than any other source.</p>
+      <p>Unmatched Taste and Lab Tested: We recognize that there are just certain things you shouldn’t have to sacrifice – and taste is one of them. We hit the lab hard and tested and rejected over 50 flavor versions before reaching a final panel of five unparalleled tastes. You will have never enjoyed taking your protein more than with the taste of GOLD ALLWHEY.</p>
+      <ul class="detailList">
+        <li>100% Whey Protein source</li>
+        <li>Primary source: Whey Protein Isolate</li>
+        <li>24 grams of protein per serving</li>
+        <li>Zero non-protein amino acids</li>
+        <li>Lab Tested & Certified</li></ul>
+        </div>
+    </div>
+        <!-- <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart('Allmax Allwhey Gold 5 Lb Vanilla')">Add To Cart</button> -->
+    </div>
+
+    <div class="productBox">
+        <img src="image\Allmax\Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs.jpg" alt="" class="productImg"/>
+        <p class="productTitle"> Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <!-- <input type="number" value="1" class="cart-quantity"> -->
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\Allmax\Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs.jpg" alt="" class="detailImg">
+            <p>We all know how important it is to get our protein in during that precious anabolic window. Because of the high quality and purity of ISOFLEX, you get some of the fastest protein absorption out there. ISOFLEX mixes well in a shaker cup but can be combined with other ingredients in a blender as a smoothie too. Take ISOFLEX anytime and anywhere you need it.</p>
+            <p>All new and improved ISOFLEX is the ultimate in taste and the ultimate in quantity. Not only does ISOFLEX have a brand new look and great taste,using cutting edge technology, It is a pure 100% whey protein isolate source </p>
+            <ul class="detailList">
+              <li>TRULY SUPERIOR PROTEIN</li>
+              <li>ULTRA-PURE</li>
+              <li>THE TASTE YOU CRAVE, THE RESULTS YOU DEMAND</li>
+              <li>Zero non-protein amino acids</li>
+              <li>Lab Tested & Certified</li>
+            </ul>
+        </div>
+      </div>  
+      </div>
+    </div>
+  </div>    
+<hr>
+
+  <p class="brandName" id="chiba"><img src="image/chibaicon.jpg" class="chibaIcon" alt=""> <!----<b>Chiba</b>---></p>
+<div class="wrapper">
+  <div class="shop-content">
+    <div class="productBox">
+        <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="productImg">
+        <p class="productTitle">Chiba Fitness Belt (Leather) 40818 (L)</p> 
+        <span class="price">Rs.25</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="detailImg"> 
+            <ul class="detailList">
+              <li>Color: Black</li>
+              <li>Size: L</li>
+              <li>Composition: 100% Leather</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+        
+
+    <div class="productBox">
+        <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="productImg">
+        <p class="productTitle"> Chiba Fitness Belt (Leather) 40818 (S)</p>
+        <span class="price">Rs.35</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="detailImg"> 
+            <ul class="detailList">
+              <li>Color: Black</li>
+              <li>Size: S</li>
+              <li>Composition: 100% Leather</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+        <img src="image\chiba\Chiba Grippad - S-5005 Black (Small).jpg" alt="" class="productImg">
+        <p class="productTitle">Chiba Grippad - S-5005 Black (Small)</p>
+        <span class="price">Rs.100</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Grippad - S-5005 Black (Small).jpg" alt="" class="detailImg"> 
+            <ul class="detailList">
+              <li>High-tech padded palm</li>
+              <li>Perfect aeration avoids heat-related loss in performance</li>
+              <li>Large grip area for perfect grip</li>
+              <li>Extremely robust</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+        <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Grippad - S-5006 Black (Large)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="detailImg"> 
+            <ul class="detailList">
+              <li>High-tech padded palm</li>
+              <li>Perfect aeration avoids heat-related loss in performance</li>
+              <li>Large grip area for perfect grip</li>
+              <li>Extremely robust</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Grippad - S-5006 Black (Small)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="detailImg"> 
+            <ul class="detailList">
+              <li>High-tech padded palm</li>
+              <li>Perfect aeration avoids heat-related loss in performance</li>
+              <li>Large grip area for perfect grip</li>
+              <li>Extremely robust</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+      <div class="productBox">
+        <img src="image\chiba\CHIBA IRON II SCHWARZ 40142 (S).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Iron II Schwarz 40142 (S)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\CHIBA IRON II SCHWARZ 40142 (S).jpg" alt="" class="detailImg"> 
+            <p>Fields of application: Strength training, Bodybuilding, wristsupport
+              Tophand: Clarino, Spantex</p>
+            <ul class="detailList">
+              <li>Palmhand: Clarino (padded)</li>
+              <li>Very durable, fully washable, professional training glove</li>
+              <li> Infinitely adjustable professional wrist brace/support, width 8cm with double Velcro stabilizes the wrist for perfect training results</li>
+              <li>Clarino padded palm with extended fingers for perfect grip</li>
+              <li>Aerated tophand anatomically stitched down palm</li>
+              <li>Quickpull pulloff-system </li>
+              <li>Washable at 30°C</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Lady Pro Black 40912 (S)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="detailImg"> 
+            <!-- <p>Fields of application: Strength training, Bodybuilding, wristsupport
+              Tophand: Clarino, Spantex</p>
+            <ul class="detailList">
+              <li>Palmhand: Clarino (padded)</li>
+              <li>Very durable, fully washable, professional training glove</li>
+              <li> Infinitely adjustable professional wrist brace/support, width 8cm with double Velcro stabilizes the wrist for perfect training results</li>
+              <li>Clarino padded palm with extended fingers for perfect grip</li>
+              <li>Aerated tophand anatomically stitched down palm</li>
+              <li>Quickpull pulloff-system </li>
+              <li>Washable at 30°C</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Lady Pro Black 40912 (XS)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="detailImg"> 
+            <!-- <p>Fields of application: Strength training, Bodybuilding, wristsupport
+              Tophand: Clarino, Spantex</p>
+            <ul class="detailList">
+              <li>Palmhand: Clarino (padded)</li>
+              <li>Very durable, fully washable, professional training glove</li>
+              <li> Infinitely adjustable professional wrist brace/support, width 8cm with double Velcro stabilizes the wrist for perfect training results</li>
+              <li>Clarino padded palm with extended fingers for perfect grip</li>
+              <li>Aerated tophand anatomically stitched down palm</li>
+              <li>Quickpull pulloff-system </li>
+              <li>Washable at 30°C</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Nylon Performer Black 40840 (M).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Nylon Performer Black 40840 (M)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Nylon Performer Black 40840 (M).jpg" alt="" class="detailImg"> 
+            <p>Adjustable weightlifting belt made from highly durable material which reduces stress on the lower back and spine.</p>
+            <p>Chiba's Nylon Performer Athletic Belt makes training more effective when you need to lift heavy weights without hurting your back. The belt takes into account the anatomical features of the body. It is wider in the back area and is also provided with soft padding, which turns the wearing of this sports accessory into sheer comfort.</p>
+            <ul class="detailList">
+              <li>Fully adjustable closure</li>
+              <li>Made from durable fabric</li>
+              <li> Supports lower back</li>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Premium Wristguard Schwarz 42122 (L)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+            <p>Area of ​​application: Weight training, muscle building training, wrist support Upper
+              hand: Clarino, Spantex, terry cloth Inner hand
+              : Rubber, Clarino, silicone print</p>
+            <ul class="detailList">
+              <li> Very robust and functional professional training glove - Ventilated backhand
+                , anatomically stitched palms</li>
+              <li>Ventilated Clarino palms with non-slip and padded trimmings. Extended fingers for a perfect grip.</li>
+              <li>  Infinitely adjustable professional wrist support with double Velcro stabilizes the wrist for perfect training results.</li>
+              <li>Quickpull removal aid</li>
+              <li>Reinforced thumb area</li>
+              <li>Washable at 30°C</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Premium Wristguard Schwarz 42122 (M)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+            <p>Area of ​​application: Weight training, muscle building training, wrist support Upper
+              hand: Clarino, Spantex, terry cloth Inner hand
+              : Rubber, Clarino, silicone print</p>
+            <ul class="detailList">
+              <li> Very robust and functional professional training glove - Ventilated backhand
+                , anatomically stitched palms</li>
+              <li>Ventilated Clarino palms with non-slip and padded trimmings. Extended fingers for a perfect grip.</li>
+              <li>  Infinitely adjustable professional wrist support with double Velcro stabilizes the wrist for perfect training results.</li>
+              <li>Quickpull removal aid</li>
+              <li>Reinforced thumb area</li>
+              <li>Washable at 30°C</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Premium Wristguard Schwarz 42122 (S)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+            <p>Area of ​​application: Weight training, muscle building training, wrist support Upper
+              hand: Clarino, Spantex, terry cloth Inner hand
+              : Rubber, Clarino, silicone print</p>
+            <ul class="detailList">
+              <li> Very robust and functional professional training glove - Ventilated backhand
+                , anatomically stitched palms</li>
+              <li>Ventilated Clarino palms with non-slip and padded trimmings. Extended fingers for a perfect grip.</li>
+              <li>  Infinitely adjustable professional wrist support with double Velcro stabilizes the wrist for perfect training results.</li>
+              <li>Quickpull removal aid</li>
+              <li>Reinforced thumb area</li>
+              <li>Washable at 30°C</li>
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba Wristguard II Schwarz 40122 (S).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba Wristguard II Schwarz 40122 (S)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Wristguard II Schwarz 40122 (S).jpg" alt="" class="detailImg"> 
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba GEL PERFORMER 40160 (S).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba GEL PERFORMER 40160 (S)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+            <p>Gel Performer Gloves by Chiba made of clarino, spandex and neoprene. They are robust thanks to the clarino but also flexible and ergonomic thanks to the neoprene.</p>
+            <p>The Gel Performer Gloves provide a comfortable grip to make our workouts more pleasant. It has breathable spandex and the palm has the anatomical form for a perfect buffering effect.</p>
+            <p>They help to git rid of callouses on the palms of the hands as well as the pain due to the weights. They also protect the joints and prevent injuries and bad postures when holding the weights. Washable at 30ºC</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\chiba\Chiba GEL PERFORMER 40160 (S).jpg" alt="" class="productImg"/>
+        <p class="productTitle">Chiba GEL PERFORMER 40160 (M)</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+            <p>Gel Performer Gloves by Chiba made of clarino, spandex and neoprene. They are robust thanks to the clarino but also flexible and ergonomic thanks to the neoprene.</p>
+            <p>The Gel Performer Gloves provide a comfortable grip to make our workouts more pleasant. It has breathable spandex and the palm has the anatomical form for a perfect buffering effect.</p>
+            <p>They help to git rid of callouses on the palms of the hands as well as the pain due to the weights. They also protect the joints and prevent injuries and bad postures when holding the weights. Washable at 30ºC</p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+  
+  <hr>
+  <p class="brandName" id="David Kirch Wellness Co."> <img src="image/david kirsch Logo.png" class="davidKirschIcon" alt=""><!---<b>David Kirch Wellness Co.</b>--></p>
+  <div class="wrapper">
+    <div class="shop-content">
+      <div class="productBox">
+          <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 4 LB.jpg" alt="" class="productImg">
+          <p class="productTitle">David Kirsch Medicine Ball 4 Lb</p> 
+          <span class="price">Rs.25</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 4 LB.jpg" alt="" class="detailImg"> 
+            <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+            <ul class="detailList">
+              <li> Age Range : Adult</li>
+              <li>Weight : 4 Pounds</li>
+              <li>Material Type : Rubber</li>
+              <li>Quickpull removal aid</li>
+            </div>
+          </div>
+        </div>
+  
+      <div class="productBox">
+          <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 6 LB.jpg" alt="" class="productImg">
+          <p class="productTitle"> David Kirsch Medicine Ball 6 Lb</p>
+          <span class="price">Rs.35</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 6 LB.jpg" alt="" class="detailImg"> 
+              <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+              <ul class="detailList">
+                <li> Age Range : Adult</li>
+                <li>Weight : 	6 Pounds</li>
+                <li>Material Type : Rubber</li>
+                <li>Quickpull removal aid</li>
+              </div>
+            </div>
+      </div>
+  
+      <div class="productBox">
+          <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 8 LB.jpg" alt="" class="productImg">
+          <p class="productTitle">David Kirsch Medicine Ball 8 Lb</p>
+          <span class="price">Rs.100</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 8 LB.jpg" alt="" class="detailImg"> 
+              <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+              <ul class="detailList">
+                <li> Age Range : Adult</li>
+                <li>Weight : 8 Pounds</li>
+                <li>Material Type : Rubber</li>
+                <li>Quickpull removal aid</li>
+              </div>
+            </div>
+        </div>
+  
+      <div class="productBox">
+          <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 10 LB.jpg" alt="" class="productImg"/>
+          <p class="productTitle">David Kirsch Medicine Ball 10 Lb</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 10 LB.jpg" alt="" class="detailImg"> 
+              <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+              <ul class="detailList">
+                <li> Age Range : Adult</li>
+                <li>Weight : 10 Pounds</li>
+                <li>Material Type : Rubber</li>
+                <li>Quickpull removal aid</li>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\DAVID KIRSCH ANKLE WEIGHT 5 LB.jpg" alt="" class="productImg"/>
+          <p class="productTitle">David Kirsch Ankle Weight 5 Lb</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\DAVID KIRSCH ANKLE WEIGHT 5 LB.jpg" alt="" class="detailImg"> 
+              <p>Adjustable weights ankle comfort weights: burn more calories and increase the effectiveness of your workout with ankle weights</p>
+              <p>Try them for a short walk first and see how you feel the next day before attempting to use them again</p>
+              <p>Easy Adjustable Velcro Strap</p>
+              </p>
+              <ul class="detailList">
+                <li> Material	Neoprene, Iron</li>
+                <li>Weight : 5 Pounds</li>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\David Kirsch Ankle Weight 10 Lb2.jpg" alt="" class="productImg"/>
+          <p class="productTitle">David Kirsch Ankle Weight 10 Lb</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\David Kirsch Ankle Weight 10 Lb2.jpg" alt="" class="detailImg"> 
+              <p>Try them for a short walk first</p>
+              <p>Add more resistance to strengthen your legs</p>
+              <p>Burn more calories and increase the effectiveness of your workout</p>
+              </p>
+              <ul class="detailList">
+                <li> Material	Neoprene, Iron</li>
+                <li>Weight : 5 Pounds</li></ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PP 100% WHEY PROTEIN POWDER CHOCOLATE FUDGE 1.81 KG.jpg" alt="" class="productImg"/>
+          <p class="productTitle">PP 100% Whey Protein Powder Chocolate Fudge 1.81 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PP 100% WHEY PROTEIN POWDER CHOCOLATE FUDGE 1.81 KG.jpg" alt=    "" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>Faster Muscle Recovery</li>
+                <li>Healthier Metabolism</li>
+                <li>Reduced Fatigue & Cramps</li>
+                <li>Improved Stamina</li>
+                <li>CHOCOLATE Fudge</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>Faster Muscle Recovery</li>
+                <li>Healthier Metabolism</li>
+                <li>Reduced Fatigue & Cramps</li>
+                <li>Improved Stamina</li>
+                <li>Vanilla</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>Faster Muscle Recovery</li>
+                <li>Healthier Metabolism</li>
+                <li>Reduced Fatigue & Cramps</li>
+                <li>Improved Stamina</li>
+                <li>Flavor : Strawberry</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span><br>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>Faster Muscle Recovery</li>
+                <li>Healthier Metabolism</li>
+                <li>Reduced Fatigue & Cramps</li>
+                <li>Improved Stamina</li>
+                <li>flavor : Mawa Kulfi</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>Faster Muscle Recovery</li>
+                <li>Healthier Metabolism</li>
+                <li>Reduced Fatigue & Cramps</li>
+                <li>Improved Stamina</li>
+                <li>flavor : Café Mocha</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Weight Gainer Powder Chocolate 3 Kg .jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Weight Gainer Powder Chocolate 3 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Weight Gainer Powder Chocolate 3 Kg .jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>Faster Muscle Recovery</li>
+                <li>Healthier Metabolism</li>
+                <li>Reduced Fatigue & Cramps</li>
+                <li>Improved Stamina</li>
+                <li>flavor : Chocolate</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PP Power Protein Powder Chocolate 1.81 Kg.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC PP Power Protein Powder Chocolate 1.81 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PP Power Protein Powder Chocolate 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>30gms rich protein with 2744mg BCAAs </li>
+                <li>1054mg L-Arginine</li>
+                <li>2218mg L-Glutamine.</li>
+                <li>500mg Tribulus terrestris</li>
+                <li>1500mg Creatine</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+  
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Mass XXX Powder Chocolate 3 Kg.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC AMP Mass XXX Powder Chocolate 3 Kg</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Mass XXX Powder Chocolate 3 Kg.jpg" alt="" class="detailImg"> 
+              <p>
+                GNC Mass XXX Powder Chocolate 3kg. This rock solid GNC AMP Mass XXX gainer is engineered with the ingredients proven to help increase lean muscle mass, weight, strength and endurance:50g of fast- and medium digesting proteins, along with 10g of BCAA, 748 calories, plus 125g of carbohydrates and healthy fats for science-based nutrition..Addition of 3g of creatine may help improve training results..Micronized amino acids help fuel muscles and might support key processes crucial to the growth and repair of muscles..Gluten-free dietary supplement with zero added sugar</p>
+              <ul class="detailList">     
+                <li>Protein Type : Weight Gainers/Mass Gainers</li>
+                <li>Usage Timings : Post-workout</li>
+                <li>Form : Powder</li>
+                <li>Dietary Preference : Gluten Free</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs.jpg" alt="" class="productImg"/>
+          <p class="productTitle">AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs.jpg" alt="" class="detailImg"> 
+
+              <ul class="detailList">     
+                <li>New Golden Standard</li>
+                <li>Super-Fast Recovery Rate</li>
+                <li>Advanced Exercise Potential</li>
+                <li>Maximizes Lean Muscle Gains</li>
+                <li>Superior Post-Workout Fuel</li>
+                <li>Quick Breakdown & Uptake</li>
+                <li>Easy on Stomach</li>
+              </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">
+                <li>Flavour : Green Apple</li>     
+                <li>Product Benefits : 	Energy Management</li>
+                <li>Form : Powder</li>
+                <li>Age Range : Adult</li>
+                <li>Net Quantity : 400.0 gram</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Orange 400 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC AMP Gold Series BCAA Advanced Orange 400 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Orange 400 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">
+                <li>Flavour : Orange</li>     
+                <li>Product Benefits : 	Energy Management</li>
+                <li>Form : Powder</li>
+                <li>Age Range : Adult</li>
+                <li>Net Quantity : 400.0 gram</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">
+                <li>Flavour : Kiwi Strawberry</li>     
+                <li>Product Benefits : 	Energy Management</li>
+                <li>Form : Powder</li>
+                <li>Age Range : Adult</li>
+                <li>Net Quantity : 400.0 gram</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">
+                <li>Flavour : Watermelon</li>     
+                <li>Product Benefits : 	Muscle Growth</li>
+                <li>Form : Powder</li>
+                <li>Age Range : Adult</li>
+                <li>Net Quantity : 400.0 gram</li>
+              </ul> 
+              </div>
+            </div>
+        </div>        
+        
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">
+                <li>Flavour : Spicy Guava</li>     
+                <li>Product Benefits : Lean Muscle Mass,Muscle Recovery</li>
+                <li>Form : Powder</li>
+                <li>Age Range : Adult</li>
+                <li>Net Quantity : 400.0 gram</li>
+              </ul> 
+              </div>
+            </div>
+        </div>        
+        
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC PRE-WORKOUT POWDER LEMON 360 GM.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Pre-Workout Powder Lemon 360 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC PRE-WORKOUT POWDER LEMON 360 GM.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">    
+                <li>Usage Pre-workout</li>
+                <li>Form : Powder</li>
+                <li>Age Range : Adult</li>
+                <li>Dietary Preference: Sugar Free</li> 
+                <li>Net Quantity : 360.0 gram</li>
+              </ul> 
+              </div>
+            </div>
+        </div>        
+        
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 250 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Creatine Monohydrate Powder 250 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 250 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">    
+                <li>Boosts Athletic Performance</li>
+                <li>Fuels Skeletal Muscles</li>
+                <li>Supports Intense Workout</li>
+                <li>Promotes Cellular Hydration</li> 
+                <li>Most Absorbable Form</li>
+              </ul> 
+              </div>
+            </div>
+        </div>        
+        
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 100 Gm.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Creatine Monohydrate Powder 100 Gm</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 100 Gm.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">    
+                <li>Improves athletic performance and fuels muscles</li>
+                <li>Energy support during intense workouts</li>
+                <li>Also help to reduce cholesterol by stimulating bile flow</li>
+              </ul> 
+              </div>
+            </div>
+        </div>       
+        
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC L-Carnitine 500 Mg Caps 1X60.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC L-Carnitine 500 Mg Caps 1X60</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC L-Carnitine 500 Mg Caps 1X60.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">    
+                <li>Amino acids are the building blocks of protein and help fuel skeletal muscles</li>
+                <li>Required to transform fatty acids into energy for muscular activity</li>
+                <li>Helps reducing weight and enhancing energy level of the body</li>
+                <li>Flavour :	Unflavoured</li>
+                <li>Net Quantity :	60 count</li>
+              </ul> 
+              </div>
+            </div>
+        </div>      
+        
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Mega Men Sports Tablets 120X1.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Mega Men Sports Tablets 120X1</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Mega Men Sports Tablets 120X1.jpg" alt="" class="detailImg"> 
+              <ul class="detailList">    
+                <li>Builds Muscle Strength</li>
+                <li>Fuels Exercise Performance</li>
+                <li>Supports Prostate Health</li>
+                <li>Protects Heart & Vision</li>
+                <li>Antioxidant Rich</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Women One Daily Multivitamin Tab 1X60.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Women One Daily Multivitamin Tab 1X60</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Women One Daily Multivitamin Tab 1X60.jpg" alt="" class="detailImg"> 
+              <p>100% RDA OF 16 ESSENTIAL NUTRIENTS</p>
+              <ul class="detailList">    
+                <li>Immunity Booster</li>
+                <li>Beauty Enhancer</li>
+                <li>Brain & Eye Support</li>
+                <li>Improves Energy Levels</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Mega Men One Daily Tablets 1X60.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Mega Men One Daily Tablets 1X60</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Mega Men One Daily Tablets 1X60.jpg" alt="" class="detailImg"> 
+              <p>SPECIALLY FORMULATED FOR MEN’S NUTRITIONAL NEEDS</p>
+              <p>100% RDA OF 14 ESSENTIAL NUTRIENTS</p>
+              <ul class="detailList">    
+                <li>Fuels Muscle Performance</li>
+                <li>Boosts Immunity</li>
+                <li>Supports Brain Function</li>
+                <li>Protects Vision</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Triflex Acting Tabs 1X120.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Triflex Acting Tabs 1X120</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Triflex Acting Tabs 1X120.jpg" alt="" class="detailImg"> 
+              <p>JOINT SUPPORT WITH CLINICALLY PROVEN INGREDIENTS
+                ENRICHED WITH CHONDROITIN & GLUCOSAMINE</p>
+              <ul class="detailList">    
+                <li>Supports Joint Health</li>
+                <li>Relieves Aching Joints</li>
+                <li>Alleviates Stiffness</li>
+                <li>Provides Mobility Comfort</li>
+                <li>Regenerates Cartilage</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Pro Performance ZMA Tablet 1X60.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Pro Performance ZMA Tablet 1X60</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Pro Performance ZMA Tablet 1X60.jpg" alt="" class="detailImg"> 
+              <p>Adequate sleep plays a large role in health. Not getting enough sleep has been linked in developing diabetes, heart disease, obesity, lower immunity levels and depression. Adults need about seven to eight hours of sleep per night. Let’s make the necessary changes to ensure an adequate amount of sleep. on a regular basis.GNC Zinc Magnesium Amino Complex contains hops flower extract, L-Theanine, L-Tryptophan, Vitamin B6, Zinc and Magnesium as the major ingredients. Magnesium is necessary for nerver function and zinc has a calming and anti-depressant effect. Hops Flower Extract is an age-old traditional remedy to help with sleep problems. L-Tryptophan, L-Theanine & Vitamin B-6 are considered to be sleep supporting amino acid.</p>
+              <ul class="detailList">    
+                <li>Relaxes the nerves</li>
+                <li>Promotes Good Sleep</li>
+                <li>As a dietary supplement, take one capsule daily at bedtime</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC CALCIUM PLUS 600 TAB WITH MAGNESIUM & VITAMIN D3 1 X 180.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Calcium Plus 600 Tab With Magnesium & Vitamin D3 1 X 180</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC CALCIUM PLUS 600 TAB WITH MAGNESIUM & VITAMIN D3 1 X 180.jpg" alt="" class="detailImg"> 
+              <!-- <p>Adequate sleep plays a large role in health. Not getting enough sleep has been linked in developing diabetes, heart disease, obesity, lower immunity levels and depression. Adults need about seven to eight hours of sleep per night. Let’s make the necessary changes to ensure an adequate amount of sleep. on a regular basis.GNC Zinc Magnesium Amino Complex contains hops flower extract, L-Theanine, L-Tryptophan, Vitamin B6, Zinc and Magnesium as the major ingredients. Magnesium is necessary for nerver function and zinc has a calming and anti-depressant effect. Hops Flower Extract is an age-old traditional remedy to help with sleep problems. L-Tryptophan, L-Theanine & Vitamin B-6 are considered to be sleep supporting amino acid.</p> -->
+              <ul class="detailList">    
+                <li>GNC Calcium Plus is a bone health supplement.</li>
+                <li>It is enriched with magnesium and vitamin D3 for proper absorption of calcium.</li>
+                <li>Each serving provides 1000 mg of calcium, 370 mg of magnesium, and 600 IU of vitamin D3.</li>
+                <li>Helps in building and maintaining strong bones.</li>
+                <li>Supports strong teeth and is useful in muscle contraction as well.</li>
+                <li>It is suitable for all age groups and gender.</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Biotin 10000 MCG Tablets 1X90.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Biotin 10000 MCG Tablets 1X90</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Biotin 10000 MCG Tablets 1X90.jpg" alt="" class="detailImg"> 
+              <p> REDUCES HAIR SHEDDING & THINNING</p>
+              <p>SUPPORTS NEW HAIR GROWTH</p>
+              <p> IMPROVES SKIN & NAILS</p>
+              <p> FILLS BIOTIN NUTRIENT GAP</p>
+              <p>SUITABLE FOR MEN & WOMEN</p>
+              <ul class="detailList">    
+                <li>Primary Supplement Type : Biotin</li>
+                <li>Diet Type : Vegetarian</li>
+                <li>Age Range (Description) :  Adult</li>
+                <li>Specific Uses For Product : Liver,Nails,Healthy Skin,Skin,Energy</li>
+                <li>Net Quantity : 90 count</li>
+                <li>Allergen Information : Allergen-Free</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Milk Thistle HP Caps 1X90.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Milk Thistle HP Caps 1X90</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Milk Thistle HP Caps 1X90.jpg" alt="" class="detailImg"> 
+              <p>Supports liver health and helps remove toxins from the body.</p>
+              <p>Protects the liver against the damage from drugs, excess alcohol and other harmful substances.</p>
+              <p> May also help to reduce cholesterol by stimulating bile flow.</p>
+              <p> May aid fat digestion, prevent body from storing excess fat.</p>
+              <ul class="detailList">    
+                <li>Diet Type : Vegetarian</li>
+                <li>Age Range (Description) :  Adult</li>
+                <li>Recommended Uses For Product : Liver Support</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+                
+        <div class="productBox">
+          <img src="image\David-Krisch\GNC Triple Strength Fish Oil Softgel Cap 1X60.jpg" alt="" class="productImg"/>
+          <p class="productTitle">GNC Triple Strength Fish Oil Softgel Cap 1X60</p>
+          <span class="price">Rs.50</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\David-Krisch\GNC Triple Strength Fish Oil Softgel Cap 1X60.jpg" alt="" class="detailImg"> 
+              <p>3X SUPER-ABSORBABLE OMEGA 3 CAPSULES
+                ENRICHED WITH 900MG EPA & DHA</p>
+              <ul class="detailList">    
+                <li>Supports Joint Function</li>
+                <li>Protects Vision</li>
+                <li>Healthy Blood Lipid Profile</li>
+                <li>Promotes Brain & Heart Health</li>
+                <li>Hydrates Skin</li>
+                <li>No Fishy Burps</li>
+              </ul> 
+              </div>
+            </div>
+        </div>
+      </div>
+    </div> 
+<hr>
+
+    <p class="brandName" id="Muscle Nutrition"> <img src="image/muscleNutrition.jpg" alt="" class="musclenutritionIcon"><!--<b>AllMax</b>--></p>
+    <div class="wrapper">
+      <div class="shop-content">
+        <div class="productBox">
+            <img src="image\Muscle Nutrition\MN Shrink Toning Lotion 8 oz.jpg" alt="" class="productImg">
+            <p class="productTitle"> MN Shrink Toning Lotion 8 oz</p> 
+            <span class="price">Rs.25</span>
+            <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+          <i class='bx bxs-cart-add add-cart'></i>  
+          <div><button class="detailBtn">Product Details</button>
+            <div class="detail">
+              <img src="image\Muscle Nutrition\MN Shrink Toning Lotion 8 oz.jpg" alt="" class="detailImg"> 
+              <p>Apply Shrink ten minutes prior to exercise. Massage Shrink until it is completely absorbed into the skin. You may feel a slight warming sensation and see some redness present in the area of application. This is temporary and will fade after some time. Wash your hands immediately after application.</p>
+              <ul class="detailList">    
+                <li>Designed to get rid of stubborn fat and tone cellulite.</li>
+                <li>It literally targets adipose tissue where it is applied.</li>
+                <li>Skin will become smoother and more supple.</li>                
+              </ul> 
+              </div>
+            </div>
+        </div>
+            <!-- <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart('Allmax Allwhey Gold 5 Lb Chocolate')">Add To Cart</button> -->
+    
+        <div class="productBox">
+            <img src="image\Muscle Nutrition\MN Protein Coffee Drink 1 Lb.jpg" alt="" class="productImg">
+            <p class="productTitle">MN Protein Coffee Drink 1 Lb</p>
+            <span class="price">Rs.35</span>
+            <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+            <i class='bx bxs-cart-add add-cart'></i>  
+            <div><button class="detailBtn">Product Details</button>
+              <div class="detail">
+                <img src="image\Muscle Nutrition\MN Protein Coffee Drink 1 Lb.jpg" alt="" class="detailImg"> 
+                </div>
+              </div>
+        </div>
+    
+        <div class="productBox">
+            <img src="image\Muscle Nutrition\Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB.jpg" alt="" class="productImg">
+            <p class="productTitle">Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB</p>
+            <span class="price">Rs.100</span>
+            <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+            <i class='bx bxs-cart-add add-cart'></i>  
+            <div><button class="detailBtn">Product Details</button>
+              <div class="detail">
+                <img src="image\Muscle Nutrition\Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB.jpg" alt="" class="detailImg"> 
+                <p>Apply Shrink ten minutes prior to exercise. Massage Shrink until it is completely absorbed into the skin. You may feel a slight warming sensation and see some redness present in the area of application. This is temporary and will fade after some time. Wash your hands immediately after application.</p>
+                <ul class="detailList">    
+                  <li>Flavour : 	Chocolate Fudge</li>
+                  <li>Diet Type : Vegetarian</li>
+                  <li>Net Quantity : 2270.0 gram</li>  
+                  <li>Protein : 30 Grams</li>              
+                </ul> 
+                </div>
+              </div>
+        </div>
+    
+        <div class="productBox">
+            <img src="image\Muscle Nutrition\ULTIMATE NUTRITION ISO SENSATION CAFE BRAZIL 5 LB.jpg" alt="" class="productImg"/>
+            <p class="productTitle">Ultimate Nutrition ISO Sensation Cafe Brazil 5 LB</p>
+            <span class="price">Rs.50</span>
+            <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+            <i class='bx bxs-cart-add add-cart'></i>  
+            <div><button class="detailBtn">Product Details</button>
+              <div class="detail">
+                <img src="image\Muscle Nutrition\ULTIMATE NUTRITION ISO SENSATION CAFE BRAZIL 5 LB.jpg" alt="" class="detailImg"> 
+                <p>Apply Shrink ten minutes prior to exercise. Massage Shrink until it is completely absorbed into the skin. You may feel a slight warming sensation and see some redness present in the area of application. This is temporary and will fade after some time. Wash your hands immediately after application.</p>
+                <ul class="detailList">    
+                  <li>Flavour : 	Cafe Brazil</li>
+                  <li>Diet Type : Non Vegetarian</li>
+                  <li>Net Quantity : 2270.0 gram</li>  
+                  <li>Protein : 30 Grams</li>              
+                </ul> 
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>    
+</div>
+
+
+
+<div class="container-fluid pb-5" id="cate" >
+
+  <div class="ShopBy" id="categories"><b>Shop By categories</b>
+  <!-- <select name="Brands" id="Selectbrand" onchange="location=this.value;">
+    <option value="">--- Select Brands ---</option>
+    <option value="#allmax">Allmax</option>
+    <option value="#chiba">Chiba</option>
+    <option value="#David Kirch Wellness Co.">David Kirch Wellness</option>
+    <option value="#Muscle Nutrition">Muscle Nutrition</option>
+  </select> -->
+</div><br><hr>
+<div class="row justify-content-center mt-5">
+  <!-- <p class="BrandBtn">Top Brands</p></center> -->
+  <a class="btn col-2 border border-light ms-3 me-3 pt-3" href="#eating" role="button"><h3>Nutrition</h3><img src="image/categories logo/eating.jpg" alt=""   class="SelectBrand" ></a>
+  <a class="btn col-2 border border-light ms-3 me-3 pt-3" href="#wearing" role="button"><h3>Sports Wear</h3><img src="image/categories logo/wearing.jpg" alt="" class="SelectBrand "></a>
+  <a class="btn col-2 border border-light ms-3 me-3 pt-3" href="#medicine ball" role="button"><h3>Medicine Ball</h3><img src="image/categories logo/ball.jpg" alt=""  class="SelectBrand"></a>
+  <a class="btn col-2 border border-light ms-3 me-3 pt-3" href="#lotion" role="button"><h3>Lotion</h3><img src="image/categories logo/lotion.jpg" alt=""  class="SelectBrand"></a>
+ 
+  
+</div><br><hr>
+  <p></p>
+  <center><h2>Nutrition</h2></center><p class="brandName" id="eating"> </p>
+<div class="wrapper">
+<div class="shop-content">
+  <div class="productBox">
+      <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Chocolate.jpg" alt="" class="productImg">
+      <p class="productTitle">Allmax Allwhey Gold 5 Lb Chocolate</p> 
+      <span class="price">Rs.25</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>25</b></span></span><br>
+      <!-- <input type="number" value="12" class="stock"> -->
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail"><img src="image\Allmax\Allmax Allwhey Gold 5 Lb Chocolate.jpg" alt="" class="detailImg">
+        <p>The Ideal Post-Workout Recovery Shake:<p> Research shows that consuming high levels of premium protein post-workout help muscles recover faster. With the body primed for nutrient absorption, a rapidly digestible protein source helps turn the body from a catabolic (muscle-wasting) state to an anabolic (muscle-building) state. Whey is recognized as the best post-workout protein source because with its high biological value, it gets absorbed and utilized faster than any other source.</p>
+      </p>
+      <ul class="detailList">
+        <li>100% Whey Protein source</li>
+        <li>Primary source: Whey Protein Isolate</li>
+        <li>24 grams of protein per serving</li>
+        <li>Zero non-protein amino acids</li>
+        <li>Lab Tested & Certified</li></ul>
+    </div>
+    </div>
+      
+  </div>
+      <!-- <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart('Allmax Allwhey Gold 5 Lb Chocolate')">Add To Cart</button> -->
+
+  <div class="productBox">
+      <img src="image\Allmax\ALLMAX ALLWHEY GOLD 5 LB COOKIES & CREAM.jpg" alt="" class="productImg">
+      <p class="productTitle"> Allmax Allwhey Gold 5 Lb Cookies & Cream</p>
+      <span class="price">Rs.35</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>200</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail"><img src="image\Allmax\ALLMAX ALLWHEY GOLD 5 LB COOKIES & CREAM.jpg" alt="" class="detailImg">
+        <p>Allwhey gold is an ultra-premium whey protein isolate and whey protein concentrate blend with 24 g protein in a 30 g serving; that's an 80 percent yield! Allwhey gold delivers a clean, complete and whole protein that has been sourced from 100 percent whey protein with zero aminos added. Demand low carbs, low fat and low sugar. Allwhey gold features reduced lactose (milk sugar) protein; ideal for individuals sensitive to lactose in other protein drinks. Allwhey has non-denatured intact whey protein fractions that further support protein absorption and utilization. Allwhey is formulated with enzymes that enhance digestion and result in higher levels of absorption and ultimately help you better utilize the protein you consume. Allwhey gold delivers an ultra-high quality whey isolate-concentrate protein blend to help rebuild your muscles after intense training. Research shows that higher protein levels following your workout help muscles recover faster. Better protein, better results.</p>
+        <ul class="detailList">
+          <li>100% Whey Protein source</li>
+          <li>Primary source: Whey Protein Isolate</li>
+          <li>Lab Tested & Certified</li></ul>
+      </div></div>
+  </div>
+
+  <div class="productBox">
+      <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Vanilla.jpg" alt="" class="productImg">
+      <p class="productTitle"> Allmax Allwhey Gold 5 Lb Vanilla</p>
+      <span class="price">Rs.100</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>12</b></span></span>
+      <!-- <input type="number" value="1" class="cart-quantity"> -->
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\Allmax\Allmax Allwhey Gold 5 Lb Vanilla.jpg" alt="" class="detailImg">
+          <p>The Ideal Post-Workout Recovery Shake: Research shows that consuming high levels of premium protein post-workout help muscles recover faster. With the body primed for nutrient absorption, a rapidly digestible protein source helps turn the body from a catabolic (muscle-wasting) state to an anabolic (muscle-building) state. Whey is recognized as the best post-workout protein source because with its high biological value, it gets absorbed and utilized faster than any other source.</p>
+    <p>Unmatched Taste and Lab Tested: We recognize that there are just certain things you shouldn’t have to sacrifice – and taste is one of them. We hit the lab hard and tested and rejected over 50 flavor versions before reaching a final panel of five unparalleled tastes. You will have never enjoyed taking your protein more than with the taste of GOLD ALLWHEY.</p>
+    <ul class="detailList">
+      <li>100% Whey Protein source</li>
+      <li>Primary source: Whey Protein Isolate</li>
+      <li>24 grams of protein per serving</li>
+      <li>Zero non-protein amino acids</li>
+      <li>Lab Tested & Certified</li></ul>
+      </div>
+  </div>
+      <!-- <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart('Allmax Allwhey Gold 5 Lb Vanilla')">Add To Cart</button> -->
+  </div>
+
+  <div class="productBox">
+      <img src="image\Allmax\Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs.jpg" alt="" class="productImg"/>
+      <p class="productTitle"> Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <!-- <input type="number" value="1" class="cart-quantity"> -->
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\Allmax\Allmax Isoflex Pure Whey Protein Isolate Chocolate 5 lbs.jpg" alt="" class="detailImg">
+          <p>We all know how important it is to get our protein in during that precious anabolic window. Because of the high quality and purity of ISOFLEX, you get some of the fastest protein absorption out there. ISOFLEX mixes well in a shaker cup but can be combined with other ingredients in a blender as a smoothie too. Take ISOFLEX anytime and anywhere you need it.</p>
+          <p>All new and improved ISOFLEX is the ultimate in taste and the ultimate in quantity. Not only does ISOFLEX have a brand new look and great taste,using cutting edge technology, It is a pure 100% whey protein isolate source </p>
+          <ul class="detailList">
+            <li>TRULY SUPERIOR PROTEIN</li>
+            <li>ULTRA-PURE</li>
+            <li>THE TASTE YOU CRAVE, THE RESULTS YOU DEMAND</li>
+            <li>Zero non-protein amino acids</li>
+            <li>Lab Tested & Certified</li>
+          </ul>
+      </div>
+    </div>  
+    </div>
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PP 100% WHEY PROTEIN POWDER CHOCOLATE FUDGE 1.81 KG.jpg" alt="" class="productImg"/>
+      <p class="productTitle">PP 100% Whey Protein Powder Chocolate Fudge 1.81 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PP 100% WHEY PROTEIN POWDER CHOCOLATE FUDGE 1.81 KG.jpg" alt=    "" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>Faster Muscle Recovery</li>
+            <li>Healthier Metabolism</li>
+            <li>Reduced Fatigue & Cramps</li>
+            <li>Improved Stamina</li>
+            <li>CHOCOLATE Fudge</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Vanilla 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>Faster Muscle Recovery</li>
+            <li>Healthier Metabolism</li>
+            <li>Reduced Fatigue & Cramps</li>
+            <li>Improved Stamina</li>
+            <li>Vanilla</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Strawberry 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>Faster Muscle Recovery</li>
+            <li>Healthier Metabolism</li>
+            <li>Reduced Fatigue & Cramps</li>
+            <li>Improved Stamina</li>
+            <li>Flavor : Strawberry</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Kulfi 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>Faster Muscle Recovery</li>
+            <li>Healthier Metabolism</li>
+            <li>Reduced Fatigue & Cramps</li>
+            <li>Improved Stamina</li>
+            <li>flavor : Mawa Kulfi</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PP 100% Whey Protein Powder Café Mocha 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>Faster Muscle Recovery</li>
+            <li>Healthier Metabolism</li>
+            <li>Reduced Fatigue & Cramps</li>
+            <li>Improved Stamina</li>
+            <li>flavor : Café Mocha</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Weight Gainer Powder Chocolate 3 Kg .jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Weight Gainer Powder Chocolate 3 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Weight Gainer Powder Chocolate 3 Kg .jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>Faster Muscle Recovery</li>
+            <li>Healthier Metabolism</li>
+            <li>Reduced Fatigue & Cramps</li>
+            <li>Improved Stamina</li>
+            <li>flavor : Chocolate</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PP Power Protein Powder Chocolate 1.81 Kg.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC PP Power Protein Powder Chocolate 1.81 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PP Power Protein Powder Chocolate 1.81 Kg.jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>30gms rich protein with 2744mg BCAAs </li>
+            <li>1054mg L-Arginine</li>
+            <li>2218mg L-Glutamine.</li>
+            <li>500mg Tribulus terrestris</li>
+            <li>1500mg Creatine</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Mass XXX Powder Chocolate 3 Kg.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC AMP Mass XXX Powder Chocolate 3 Kg</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Mass XXX Powder Chocolate 3 Kg.jpg" alt="" class="detailImg"> 
+          <p>
+            GNC Mass XXX Powder Chocolate 3kg. This rock solid GNC AMP Mass XXX gainer is engineered with the ingredients proven to help increase lean muscle mass, weight, strength and endurance:50g of fast- and medium digesting proteins, along with 10g of BCAA, 748 calories, plus 125g of carbohydrates and healthy fats for science-based nutrition..Addition of 3g of creatine may help improve training results..Micronized amino acids help fuel muscles and might support key processes crucial to the growth and repair of muscles..Gluten-free dietary supplement with zero added sugar</p>
+          <ul class="detailList">     
+            <li>Protein Type : Weight Gainers/Mass Gainers</li>
+            <li>Usage Timings : Post-workout</li>
+            <li>Form : Powder</li>
+            <li>Dietary Preference : Gluten Free</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs.jpg" alt="" class="productImg"/>
+      <p class="productTitle">AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Gold 100% Whey Protein Powder Chocolate 4 Lbs.jpg" alt="" class="detailImg"> 
+
+          <ul class="detailList">     
+            <li>New Golden Standard</li>
+            <li>Super-Fast Recovery Rate</li>
+            <li>Advanced Exercise Potential</li>
+            <li>Maximizes Lean Muscle Gains</li>
+            <li>Superior Post-Workout Fuel</li>
+            <li>Quick Breakdown & Uptake</li>
+            <li>Easy on Stomach</li>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Green Apple 400 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Flavour : Green Apple</li>     
+            <li>Product Benefits : 	Energy Management</li>
+            <li>Form : Powder</li>
+            <li>Age Range : Adult</li>
+            <li>Net Quantity : 400.0 gram</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Orange 400 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC AMP Gold Series BCAA Advanced Orange 400 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Orange 400 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Flavour : Orange</li>     
+            <li>Product Benefits : 	Energy Management</li>
+            <li>Form : Powder</li>
+            <li>Age Range : Adult</li>
+            <li>Net Quantity : 400.0 gram</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Kiwi Strawberry 400 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Flavour : Kiwi Strawberry</li>     
+            <li>Product Benefits : 	Energy Management</li>
+            <li>Form : Powder</li>
+            <li>Age Range : Adult</li>
+            <li>Net Quantity : 400.0 gram</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Watermelon 400 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Flavour : Watermelon</li>     
+            <li>Product Benefits : 	Muscle Growth</li>
+            <li>Form : Powder</li>
+            <li>Age Range : Adult</li>
+            <li>Net Quantity : 400.0 gram</li>
+          </ul> 
+          </div>
+        </div>
+    </div>        
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC AMP Gold Series BCAA Advanced Spicy Guava 400 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Flavour : Spicy Guava</li>     
+            <li>Product Benefits : Lean Muscle Mass,Muscle Recovery</li>
+            <li>Form : Powder</li>
+            <li>Age Range : Adult</li>
+            <li>Net Quantity : 400.0 gram</li>
+          </ul> 
+          </div>
+        </div>
+    </div>        
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC PRE-WORKOUT POWDER LEMON 360 GM.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Pre-Workout Powder Lemon 360 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC PRE-WORKOUT POWDER LEMON 360 GM.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">    
+            <li>Usage Pre-workout</li>
+            <li>Form : Powder</li>
+            <li>Age Range : Adult</li>
+            <li>Dietary Preference: Sugar Free</li> 
+            <li>Net Quantity : 360.0 gram</li>
+          </ul> 
+          </div>
+        </div>
+    </div>        
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 250 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Creatine Monohydrate Powder 250 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 250 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">    
+            <li>Boosts Athletic Performance</li>
+            <li>Fuels Skeletal Muscles</li>
+            <li>Supports Intense Workout</li>
+            <li>Promotes Cellular Hydration</li> 
+            <li>Most Absorbable Form</li>
+          </ul> 
+          </div>
+        </div>
+    </div>        
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 100 Gm.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Creatine Monohydrate Powder 100 Gm</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Creatine Monohydrate Powder 100 Gm.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">    
+            <li>Improves athletic performance and fuels muscles</li>
+            <li>Energy support during intense workouts</li>
+            <li>Also help to reduce cholesterol by stimulating bile flow</li>
+          </ul> 
+          </div>
+        </div>
+    </div>       
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC L-Carnitine 500 Mg Caps 1X60.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC L-Carnitine 500 Mg Caps 1X60</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC L-Carnitine 500 Mg Caps 1X60.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">    
+            <li>Amino acids are the building blocks of protein and help fuel skeletal muscles</li>
+            <li>Required to transform fatty acids into energy for muscular activity</li>
+            <li>Helps reducing weight and enhancing energy level of the body</li>
+            <li>Flavour :	Unflavoured</li>
+            <li>Net Quantity :	60 count</li>
+          </ul> 
+          </div>
+        </div>
+    </div>      
+    
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Mega Men Sports Tablets 120X1.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Mega Men Sports Tablets 120X1</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Mega Men Sports Tablets 120X1.jpg" alt="" class="detailImg"> 
+          <ul class="detailList">    
+            <li>Builds Muscle Strength</li>
+            <li>Fuels Exercise Performance</li>
+            <li>Supports Prostate Health</li>
+            <li>Protects Heart & Vision</li>
+            <li>Antioxidant Rich</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Women One Daily Multivitamin Tab 1X60.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Women One Daily Multivitamin Tab 1X60</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Women One Daily Multivitamin Tab 1X60.jpg" alt="" class="detailImg"> 
+          <p>100% RDA OF 16 ESSENTIAL NUTRIENTS</p>
+          <ul class="detailList">    
+            <li>Immunity Booster</li>
+            <li>Beauty Enhancer</li>
+            <li>Brain & Eye Support</li>
+            <li>Improves Energy Levels</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Mega Men One Daily Tablets 1X60.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Mega Men One Daily Tablets 1X60</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Mega Men One Daily Tablets 1X60.jpg" alt="" class="detailImg"> 
+          <p>SPECIALLY FORMULATED FOR MEN’S NUTRITIONAL NEEDS</p>
+          <p>100% RDA OF 14 ESSENTIAL NUTRIENTS</p>
+          <ul class="detailList">    
+            <li>Fuels Muscle Performance</li>
+            <li>Boosts Immunity</li>
+            <li>Supports Brain Function</li>
+            <li>Protects Vision</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Triflex Acting Tabs 1X120.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Triflex Acting Tabs 1X120</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Triflex Acting Tabs 1X120.jpg" alt="" class="detailImg"> 
+          <p>JOINT SUPPORT WITH CLINICALLY PROVEN INGREDIENTS
+            ENRICHED WITH CHONDROITIN & GLUCOSAMINE</p>
+          <ul class="detailList">    
+            <li>Supports Joint Health</li>
+            <li>Relieves Aching Joints</li>
+            <li>Alleviates Stiffness</li>
+            <li>Provides Mobility Comfort</li>
+            <li>Regenerates Cartilage</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Pro Performance ZMA Tablet 1X60.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Pro Performance ZMA Tablet 1X60</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Pro Performance ZMA Tablet 1X60.jpg" alt="" class="detailImg"> 
+          <p>Adequate sleep plays a large role in health. Not getting enough sleep has been linked in developing diabetes, heart disease, obesity, lower immunity levels and depression. Adults need about seven to eight hours of sleep per night. Let’s make the necessary changes to ensure an adequate amount of sleep. on a regular basis.GNC Zinc Magnesium Amino Complex contains hops flower extract, L-Theanine, L-Tryptophan, Vitamin B6, Zinc and Magnesium as the major ingredients. Magnesium is necessary for nerver function and zinc has a calming and anti-depressant effect. Hops Flower Extract is an age-old traditional remedy to help with sleep problems. L-Tryptophan, L-Theanine & Vitamin B-6 are considered to be sleep supporting amino acid.</p>
+          <ul class="detailList">    
+            <li>Relaxes the nerves</li>
+            <li>Promotes Good Sleep</li>
+            <li>As a dietary supplement, take one capsule daily at bedtime</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC CALCIUM PLUS 600 TAB WITH MAGNESIUM & VITAMIN D3 1 X 180.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Calcium Plus 600 Tab With Magnesium & Vitamin D3 1 X 180</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC CALCIUM PLUS 600 TAB WITH MAGNESIUM & VITAMIN D3 1 X 180.jpg" alt="" class="detailImg"> 
+          <!-- <p>Adequate sleep plays a large role in health. Not getting enough sleep has been linked in developing diabetes, heart disease, obesity, lower immunity levels and depression. Adults need about seven to eight hours of sleep per night. Let’s make the necessary changes to ensure an adequate amount of sleep. on a regular basis.GNC Zinc Magnesium Amino Complex contains hops flower extract, L-Theanine, L-Tryptophan, Vitamin B6, Zinc and Magnesium as the major ingredients. Magnesium is necessary for nerver function and zinc has a calming and anti-depressant effect. Hops Flower Extract is an age-old traditional remedy to help with sleep problems. L-Tryptophan, L-Theanine & Vitamin B-6 are considered to be sleep supporting amino acid.</p> -->
+          <ul class="detailList">    
+            <li>GNC Calcium Plus is a bone health supplement.</li>
+            <li>It is enriched with magnesium and vitamin D3 for proper absorption of calcium.</li>
+            <li>Each serving provides 1000 mg of calcium, 370 mg of magnesium, and 600 IU of vitamin D3.</li>
+            <li>Helps in building and maintaining strong bones.</li>
+            <li>Supports strong teeth and is useful in muscle contraction as well.</li>
+            <li>It is suitable for all age groups and gender.</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Biotin 10000 MCG Tablets 1X90.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Biotin 10000 MCG Tablets 1X90</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Biotin 10000 MCG Tablets 1X90.jpg" alt="" class="detailImg"> 
+          <p> REDUCES HAIR SHEDDING & THINNING</p>
+          <p>SUPPORTS NEW HAIR GROWTH</p>
+          <p> IMPROVES SKIN & NAILS</p>
+          <p> FILLS BIOTIN NUTRIENT GAP</p>
+          <p>SUITABLE FOR MEN & WOMEN</p>
+          <ul class="detailList">    
+            <li>Primary Supplement Type : Biotin</li>
+            <li>Diet Type : Vegetarian</li>
+            <li>Age Range (Description) :  Adult</li>
+            <li>Specific Uses For Product : Liver,Nails,Healthy Skin,Skin,Energy</li>
+            <li>Net Quantity : 90 count</li>
+            <li>Allergen Information : Allergen-Free</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Milk Thistle HP Caps 1X90.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Milk Thistle HP Caps 1X90</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Milk Thistle HP Caps 1X90.jpg" alt="" class="detailImg"> 
+          <p>Supports liver health and helps remove toxins from the body.</p>
+          <p>Protects the liver against the damage from drugs, excess alcohol and other harmful substances.</p>
+          <p> May also help to reduce cholesterol by stimulating bile flow.</p>
+          <p> May aid fat digestion, prevent body from storing excess fat.</p>
+          <ul class="detailList">    
+            <li>Diet Type : Vegetarian</li>
+            <li>Age Range (Description) :  Adult</li>
+            <li>Recommended Uses For Product : Liver Support</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+            
+    <div class="productBox">
+      <img src="image\David-Krisch\GNC Triple Strength Fish Oil Softgel Cap 1X60.jpg" alt="" class="productImg"/>
+      <p class="productTitle">GNC Triple Strength Fish Oil Softgel Cap 1X60</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\GNC Triple Strength Fish Oil Softgel Cap 1X60.jpg" alt="" class="detailImg"> 
+          <p>3X SUPER-ABSORBABLE OMEGA 3 CAPSULES
+            ENRICHED WITH 900MG EPA & DHA</p>
+          <ul class="detailList">    
+            <li>Supports Joint Function</li>
+            <li>Protects Vision</li>
+            <li>Healthy Blood Lipid Profile</li>
+            <li>Promotes Brain & Heart Health</li>
+            <li>Hydrates Skin</li>
+            <li>No Fishy Burps</li>
+          </ul> 
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\Muscle Nutrition\MN Protein Coffee Drink 1 Lb.jpg" alt="" class="productImg">
+      <p class="productTitle">MN Protein Coffee Drink 1 Lb</p>
+      <span class="price">Rs.35</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\Muscle Nutrition\MN Protein Coffee Drink 1 Lb.jpg" alt="" class="detailImg"> 
+          </div>
+        </div>
+  </div>
+
+  <div class="productBox">
+      <img src="image\Muscle Nutrition\Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB.jpg" alt="" class="productImg">
+      <p class="productTitle">Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB</p>
+      <span class="price">Rs.100</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\Muscle Nutrition\Ultimate Nutrition ISO Sensation Chocolate Fudge 5 LB.jpg" alt="" class="detailImg"> 
+          <p>Apply Shrink ten minutes prior to exercise. Massage Shrink until it is completely absorbed into the skin. You may feel a slight warming sensation and see some redness present in the area of application. This is temporary and will fade after some time. Wash your hands immediately after application.</p>
+          <ul class="detailList">    
+            <li>Flavour : 	Chocolate Fudge</li>
+            <li>Diet Type : Vegetarian</li>
+            <li>Net Quantity : 2270.0 gram</li>  
+            <li>Protein : 30 Grams</li>              
+          </ul> 
+          </div>
+        </div>
+  </div>
+
+  <div class="productBox">
+      <img src="image\Muscle Nutrition\ULTIMATE NUTRITION ISO SENSATION CAFE BRAZIL 5 LB.jpg" alt="" class="productImg"/>
+      <p class="productTitle">Ultimate Nutrition ISO Sensation Cafe Brazil 5 LB</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\Muscle Nutrition\ULTIMATE NUTRITION ISO SENSATION CAFE BRAZIL 5 LB.jpg" alt="" class="detailImg"> 
+          <p>Apply Shrink ten minutes prior to exercise. Massage Shrink until it is completely absorbed into the skin. You may feel a slight warming sensation and see some redness present in the area of application. This is temporary and will fade after some time. Wash your hands immediately after application.</p>
+          <ul class="detailList">    
+            <li>Flavour : 	Cafe Brazil</li>
+            <li>Diet Type : Non Vegetarian</li>
+            <li>Net Quantity : 2270.0 gram</li>  
+            <li>Protein : 30 Grams</li>              
+          </ul> 
+          </div>
+        </div>
+    </div>
+  
+  </div>
+</div>    
+<hr>
+
+<center><h2>Sports Wear</h2></center><p class="brandName" id="wearing"><img src="image/categories logo/wearing.jpg" class="chibaIcon" alt=""> <!----<b>Chiba</b>---></p>
+<div class="wrapper">
+<div class="shop-content">
+  <div class="productBox">
+      <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="productImg">
+      <p class="productTitle">Chiba Fitness Belt (Leather) 40818 (L)</p> 
+      <span class="price">Rs.25</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Color: Black</li>
+            <li>Size: L</li>
+            <li>Composition: 100% Leather</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+      
+
+  <div class="productBox">
+      <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="productImg">
+      <p class="productTitle"> Chiba Fitness Belt (Leather) 40818 (S)</p>
+      <span class="price">Rs.35</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\CHIBA FITNESS BELT (LEATHER) 40818 (S).jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>Color: Black</li>
+            <li>Size: S</li>
+            <li>Composition: 100% Leather</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="productBox">
+      <img src="image\chiba\Chiba Grippad - S-5005 Black (Small).jpg" alt="" class="productImg">
+      <p class="productTitle">Chiba Grippad - S-5005 Black (Small)</p>
+      <span class="price">Rs.100</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Grippad - S-5005 Black (Small).jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>High-tech padded palm</li>
+            <li>Perfect aeration avoids heat-related loss in performance</li>
+            <li>Large grip area for perfect grip</li>
+            <li>Extremely robust</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="productBox">
+      <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Grippad - S-5006 Black (Large)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>High-tech padded palm</li>
+            <li>Perfect aeration avoids heat-related loss in performance</li>
+            <li>Large grip area for perfect grip</li>
+            <li>Extremely robust</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Grippad - S-5006 Black (Small)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Grippad - S-5006 Black (Large).jpg" alt="" class="detailImg"> 
+          <ul class="detailList">
+            <li>High-tech padded palm</li>
+            <li>Perfect aeration avoids heat-related loss in performance</li>
+            <li>Large grip area for perfect grip</li>
+            <li>Extremely robust</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class="productBox">
+      <img src="image\chiba\CHIBA IRON II SCHWARZ 40142 (S).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Iron II Schwarz 40142 (S)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\CHIBA IRON II SCHWARZ 40142 (S).jpg" alt="" class="detailImg"> 
+          <p>Fields of application: Strength training, Bodybuilding, wristsupport
+            Tophand: Clarino, Spantex</p>
+          <ul class="detailList">
+            <li>Palmhand: Clarino (padded)</li>
+            <li>Very durable, fully washable, professional training glove</li>
+            <li> Infinitely adjustable professional wrist brace/support, width 8cm with double Velcro stabilizes the wrist for perfect training results</li>
+            <li>Clarino padded palm with extended fingers for perfect grip</li>
+            <li>Aerated tophand anatomically stitched down palm</li>
+            <li>Quickpull pulloff-system </li>
+            <li>Washable at 30°C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Lady Pro Black 40912 (S)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="detailImg"> 
+          <!-- <p>Fields of application: Strength training, Bodybuilding, wristsupport
+            Tophand: Clarino, Spantex</p>
+          <ul class="detailList">
+            <li>Palmhand: Clarino (padded)</li>
+            <li>Very durable, fully washable, professional training glove</li>
+            <li> Infinitely adjustable professional wrist brace/support, width 8cm with double Velcro stabilizes the wrist for perfect training results</li>
+            <li>Clarino padded palm with extended fingers for perfect grip</li>
+            <li>Aerated tophand anatomically stitched down palm</li>
+            <li>Quickpull pulloff-system </li>
+            <li>Washable at 30°C</li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Lady Pro Black 40912 (XS)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Lady Pro Black 40912 (S).jpg" alt="" class="detailImg"> 
+          <!-- <p>Fields of application: Strength training, Bodybuilding, wristsupport
+            Tophand: Clarino, Spantex</p>
+          <ul class="detailList">
+            <li>Palmhand: Clarino (padded)</li>
+            <li>Very durable, fully washable, professional training glove</li>
+            <li> Infinitely adjustable professional wrist brace/support, width 8cm with double Velcro stabilizes the wrist for perfect training results</li>
+            <li>Clarino padded palm with extended fingers for perfect grip</li>
+            <li>Aerated tophand anatomically stitched down palm</li>
+            <li>Quickpull pulloff-system </li>
+            <li>Washable at 30°C</li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Nylon Performer Black 40840 (M).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Nylon Performer Black 40840 (M)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Nylon Performer Black 40840 (M).jpg" alt="" class="detailImg"> 
+          <p>Adjustable weightlifting belt made from highly durable material which reduces stress on the lower back and spine.</p>
+          <p>Chiba's Nylon Performer Athletic Belt makes training more effective when you need to lift heavy weights without hurting your back. The belt takes into account the anatomical features of the body. It is wider in the back area and is also provided with soft padding, which turns the wearing of this sports accessory into sheer comfort.</p>
+          <ul class="detailList">
+            <li>Fully adjustable closure</li>
+            <li>Made from durable fabric</li>
+            <li> Supports lower back</li>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Premium Wristguard Schwarz 42122 (L)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+          <p>Area of ​​application: Weight training, muscle building training, wrist support Upper
+            hand: Clarino, Spantex, terry cloth Inner hand
+            : Rubber, Clarino, silicone print</p>
+          <ul class="detailList">
+            <li> Very robust and functional professional training glove - Ventilated backhand
+              , anatomically stitched palms</li>
+            <li>Ventilated Clarino palms with non-slip and padded trimmings. Extended fingers for a perfect grip.</li>
+            <li>  Infinitely adjustable professional wrist support with double Velcro stabilizes the wrist for perfect training results.</li>
+            <li>Quickpull removal aid</li>
+            <li>Reinforced thumb area</li>
+            <li>Washable at 30°C</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Premium Wristguard Schwarz 42122 (M)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+          <p>Area of ​​application: Weight training, muscle building training, wrist support Upper
+            hand: Clarino, Spantex, terry cloth Inner hand
+            : Rubber, Clarino, silicone print</p>
+          <ul class="detailList">
+            <li> Very robust and functional professional training glove - Ventilated backhand
+              , anatomically stitched palms</li>
+            <li>Ventilated Clarino palms with non-slip and padded trimmings. Extended fingers for a perfect grip.</li>
+            <li>  Infinitely adjustable professional wrist support with double Velcro stabilizes the wrist for perfect training results.</li>
+            <li>Quickpull removal aid</li>
+            <li>Reinforced thumb area</li>
+            <li>Washable at 30°C</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Premium Wristguard Schwarz 42122 (S)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+          <p>Area of ​​application: Weight training, muscle building training, wrist support Upper
+            hand: Clarino, Spantex, terry cloth Inner hand
+            : Rubber, Clarino, silicone print</p>
+          <ul class="detailList">
+            <li> Very robust and functional professional training glove - Ventilated backhand
+              , anatomically stitched palms</li>
+            <li>Ventilated Clarino palms with non-slip and padded trimmings. Extended fingers for a perfect grip.</li>
+            <li>  Infinitely adjustable professional wrist support with double Velcro stabilizes the wrist for perfect training results.</li>
+            <li>Quickpull removal aid</li>
+            <li>Reinforced thumb area</li>
+            <li>Washable at 30°C</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba Wristguard II Schwarz 40122 (S).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba Wristguard II Schwarz 40122 (S)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Wristguard II Schwarz 40122 (S).jpg" alt="" class="detailImg"> 
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba GEL PERFORMER 40160 (S).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba GEL PERFORMER 40160 (S)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+          <p>Gel Performer Gloves by Chiba made of clarino, spandex and neoprene. They are robust thanks to the clarino but also flexible and ergonomic thanks to the neoprene.</p>
+          <p>The Gel Performer Gloves provide a comfortable grip to make our workouts more pleasant. It has breathable spandex and the palm has the anatomical form for a perfect buffering effect.</p>
+          <p>They help to git rid of callouses on the palms of the hands as well as the pain due to the weights. They also protect the joints and prevent injuries and bad postures when holding the weights. Washable at 30ºC</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\chiba\Chiba GEL PERFORMER 40160 (S).jpg" alt="" class="productImg"/>
+      <p class="productTitle">Chiba GEL PERFORMER 40160 (M)</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\chiba\Chiba Premium Wristguard Schwarz 42122 (L).jpg" alt="" class="detailImg"> 
+          <p>Gel Performer Gloves by Chiba made of clarino, spandex and neoprene. They are robust thanks to the clarino but also flexible and ergonomic thanks to the neoprene.</p>
+          <p>The Gel Performer Gloves provide a comfortable grip to make our workouts more pleasant. It has breathable spandex and the palm has the anatomical form for a perfect buffering effect.</p>
+          <p>They help to git rid of callouses on the palms of the hands as well as the pain due to the weights. They also protect the joints and prevent injuries and bad postures when holding the weights. Washable at 30ºC</p>
+          
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div class="productBox">
+      <img src="image\David-Krisch\DAVID KIRSCH ANKLE WEIGHT 5 LB.jpg" alt="" class="productImg"/>
+      <p class="productTitle">David Kirsch Ankle Weight 5 Lb</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\DAVID KIRSCH ANKLE WEIGHT 5 LB.jpg" alt="" class="detailImg"> 
+          <p>Adjustable weights ankle comfort weights: burn more calories and increase the effectiveness of your workout with ankle weights</p>
+          <p>Try them for a short walk first and see how you feel the next day before attempting to use them again</p>
+          <p>Easy Adjustable Velcro Strap</p>
+          </p>
+          <ul class="detailList">
+            <li> Material	Neoprene, Iron</li>
+            <li>Weight : 5 Pounds</li>
+          </div>
+        </div>
+    </div>
+
+    <div class="productBox">
+      <img src="image\David-Krisch\David Kirsch Ankle Weight 10 Lb2.jpg" alt="" class="productImg"/>
+      <p class="productTitle">David Kirsch Ankle Weight 10 Lb</p>
+      <span class="price">Rs.50</span>
+      <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\David Kirsch Ankle Weight 10 Lb2.jpg" alt="" class="detailImg"> 
+          <p>Try them for a short walk first</p>
+          <p>Add more resistance to strengthen your legs</p>
+          <p>Burn more calories and increase the effectiveness of your workout</p>
+          </p>
+          <ul class="detailList">
+            <li> Material	Neoprene, Iron</li>
+            <li>Weight : 5 Pounds</li></ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div> 
+
+<hr>
+<center><h2>Medicine Ball</h2></center>
+<p class="brandName" id="medicine ball"> <img src="image/categories logo/ball.jpg" class="davidKirschIcon" alt=""><!---<b>David Kirch Wellness Co.</b>--></p>
+<div class="wrapper">
+  <div class="shop-content">
+    <div class="productBox">
+        <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 4 LB.jpg" alt="" class="productImg">
+        <p class="productTitle">David Kirsch Medicine Ball 4 Lb</p> 
+        <span class="price">Rs.25</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+      <i class='bx bxs-cart-add add-cart'></i>  
+      <div><button class="detailBtn">Product Details</button>
+        <div class="detail">
+          <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 4 LB.jpg" alt="" class="detailImg"> 
+          <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+          <ul class="detailList">
+            <li> Age Range : Adult</li>
+            <li>Weight : 4 Pounds</li>
+            <li>Material Type : Rubber</li>
+            <li>Quickpull removal aid</li>
+          </div>
+        </div>
+      </div>
+
+    <div class="productBox">
+        <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 6 LB.jpg" alt="" class="productImg">
+        <p class="productTitle"> David Kirsch Medicine Ball 6 Lb</p>
+        <span class="price">Rs.35</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 6 LB.jpg" alt="" class="detailImg"> 
+            <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+            <ul class="detailList">
+              <li> Age Range : Adult</li>
+              <li>Weight : 	6 Pounds</li>
+              <li>Material Type : Rubber</li>
+              <li>Quickpull removal aid</li>
+            </div>
+          </div>
+    </div>
+
+    <div class="productBox">
+        <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 8 LB.jpg" alt="" class="productImg">
+        <p class="productTitle">David Kirsch Medicine Ball 8 Lb</p>
+        <span class="price">Rs.100</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 8 LB.jpg" alt="" class="detailImg"> 
+            <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+            <ul class="detailList">
+              <li> Age Range : Adult</li>
+              <li>Weight : 8 Pounds</li>
+              <li>Material Type : Rubber</li>
+              <li>Quickpull removal aid</li>
+            </div>
+          </div>
+      </div>
+
+      <div class="productBox">
+        <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 10 LB.jpg" alt="" class="productImg"/>
+        <p class="productTitle">David Kirsch Medicine Ball 10 Lb</p>
+        <span class="price">Rs.50</span>
+        <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\David-Krisch\DAVID KIRSCH MEDICINE BALL 10 LB.jpg" alt="" class="detailImg"> 
+            <p>Break away from the “old school” approach of clunky dumbbells with David Kirsch’s new easy grip, heavy duty, rubber-weighted medicine ball. It’s the perfect accompaniment to David’s Ultimate New York Body Plan and many of his other best-selling programs. This ball will help you shape and tone your arms, shoulders and legs. Beginner Level 2 lbs Intermediate Level 4 lbs Advanced Levels 6, 8, and 10 lbs WEIGHT6 lbs DIMENSIONS1 x 1 x 1 in WEIGHT 8 lb-Advanced, 6 lb-Advanced</p>
+            <ul class="detailList">
+              <li> Age Range : Adult</li>
+              <li>Weight : 10 Pounds</li>
+              <li>Material Type : Rubber</li>
+              <li>Quickpull removal aid</li>
+            </div>
+          </div>
+      </div>
+    
+
+      
+    </div>
+  </div> 
+<hr>
+<center><h2>Lotion</h2></center>
+  <p class="brandName" id="lotion"> <img src="image/categories logo/lotion.jpg" alt="" class="musclenutritionIcon"><!--<b>AllMax</b>--></p>
+  <div class="wrapper">
+    <div class="shop-content">
+      <div class="productBox">
+          <img src="image\Muscle Nutrition\MN Shrink Toning Lotion 8 oz.jpg" alt="" class="productImg">
+          <p class="productTitle"> MN Shrink Toning Lotion 8 oz</p> 
+          <span class="price">Rs.25</span>
+          <span class="stock">In Stock :<span class="ItemStock"> <b>20</b></span></span>
+        <i class='bx bxs-cart-add add-cart'></i>  
+        <div><button class="detailBtn">Product Details</button>
+          <div class="detail">
+            <img src="image\Muscle Nutrition\MN Shrink Toning Lotion 8 oz.jpg" alt="" class="detailImg"> 
+            <p>Apply Shrink ten minutes prior to exercise. Massage Shrink until it is completely absorbed into the skin. You may feel a slight warming sensation and see some redness present in the area of application. This is temporary and will fade after some time. Wash your hands immediately after application.</p>
+            <ul class="detailList">    
+              <li>Designed to get rid of stubborn fat and tone cellulite.</li>
+              <li>It literally targets adipose tissue where it is applied.</li>
+              <li>Skin will become smoother and more supple.</li>                
+            </ul> 
+            </div>
+          </div>
+      </div>
+          <!-- <button class="rounded-pill ms-5 mt-2 p-1 addCart" onclick="addToCart('Allmax Allwhey Gold 5 Lb Chocolate')">Add To Cart</button> -->
+  
+      </div>
+    </div>    
+</div>
+<script src="pb.js" async></script>
+<script src="goto.js"></script>
+
+<!---Cart-->
+<!-- <div id="CartBody">
+    <p id="Cart">Cart</p>
+    <div id="AddedItem">
+
+    </div>
+</div> -->
+
+
+
+<!----Footer-->
+<div id="footer">
+  <div class="footer">
+      <img src="image/address.png" alt="address" id="address"><span class="d2 text-light ms-2">Address</span>
+      <div class="text-light p-1"><p>Perfect Body</p><div>8 ARC House, Sector No-8, </div><div>nr. Reena Mokal Hospital,</div><div> Charkop Gaon, <div> Kandivali West, Mumbai, Maharashtra 400067</div></div></div>
+  </div>
+  <div class="footer">
+      <img src="image/contact.png" alt="address" id="address"><span class="d2 text-light ms-2">Contact Us</span>
+      <div class="text-light p-1"><p><div><b>Phone No </b>: +91 9167203970 / 022 2860 2323 </div><div><b>Email Id </b> : ecommerce@arc-distributors.com </div></p> </div>
+  </div>
+  <div class="footer">
+      <p class="text-light"><b>Follow Us</b></p>
+      <div class="footerImage">
+        <i class='bx bxl-facebook-square'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+          
+      </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
+
+

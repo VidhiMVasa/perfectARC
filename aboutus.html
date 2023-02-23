@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutus</title>
+</head>
+<style>
+    .Aboutus{
+    width: 95%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    padding:2%;
+    margin: 2% 0 2% 0;
+    position: relative;
+    background-color: rgb(229, 228, 226);
+  }
+  .about{
+    font-size: 2.5vh;
+  }
+  .whyUs{
+    width: 100%;
+    height:70vh;
+    margin:1vh 1vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .whychooseus{
+    width: 300vw;
+    height: 50vh;
+    border: 1px solid;
+    margin: 0.5vh 2vh;
+    font-size: 1.3vw;
+    position: relative;
+    background-color: rgb(126, 182, 87);
+  }
+  .wpb{
+    font-size: 2.2vw;
+  }
+  .wcu{
+    width:200vw;
+    height: 42vh;
+    font-size: 1.1vw;
+    padding:1vw;
+    margin:2vh 1vh;
+    border: 1px solid ;
+    background-color: white;
+  }
+  .wcu:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+  }
+  .wcuImage{
+    width:3vw;
+    height:8vh;
+  }
+  @media screen and (max-width:900px) {
+    .Aboutus{
+        height:150vh;
+    }
+    .wpb{
+        font-size: medium;
+    }
+    .whyUs{
+        display: flex;
+        flex-direction: column;
+    }
+    .whychooseus{
+        width: 90%;
+        font-size: small;
+    }
+    .wcu{
+        width: 90%;
+        font-size: small;
+    }
+    .wcuImage{
+        width: 10%;
+        height: auto;
+    }
+  }
+  
+</style>
+<body>
+    <!-----About Us-->
+<div class="Aboutus" id="aboutus">
+    <div class="w-100 h-25 about"><p class="about">Since its Inception in 1997, M/s. ARC Distributors a Proprietorship Company, has groomed into versatile business verticals namely Jewelry Tools & Consumables, Dental Lab Products & Consumables And Dietary Supplements / Sports Nutrition.</p>
+      <p>In 2015, M/s. ARC Distributors, a Proprietorship Firm was upgraded to a India Private Limited Company as M/s.ARC Distributors (I) Pvt. Ltd. with a to enhance Indian market by creating a penetration / promoting Internationally Reputed Brand Products in the country.</p>
+    </div>
+    <div class="whyUs">
+        <div class="whychooseus">
+            <center><p class="wpb text-dark">Why Perfect Body</p></center>
+            <p class="ms-2 text-light">Perfect Body Co. is one of the leading Indian companies dealing with Sports Nutrition & Dietary Supplements from some of the best-known brands worldwide.</p>
+            <p class="ms-2 text-light">Our Vision is to make available / cater our valued customers with the Best quality products at a Fair / competitive Price.</p>
+        </div>
+        <div class="wcu">
+            <center><img src="image/distributor.png" class="wcuImage" alt=""></center>
+            <p><b>Since, more than a decade, we import and distribute products of reputed Brands such as  AllMaxx,  Muscletech,  USP labs, Giant Sports, Athletic Edge, BPI Sports, Universal Nutrition, GAT Sport, Nutrex, Ultimate Nutrition etc. </b></p>
+        </div>
+        <div class="wcu">
+          <center><img src="image/best price.jpg" class="wcuImage" alt=""></center>
+          <p><b>We thrive to get the best quality products to our customers at fair & competitive prices. Thus, assuring the customers of genuine and best deals/rates in the market.</b></p>
+        </div>
+        <div class="wcu">
+          <center><img src="image/ecommerce.png" class="wcuImage" alt=""></center>
+          <p><b>We cater to the distributor/wholesaler/retailer & e-commerce channels throughout the country.</b></p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
